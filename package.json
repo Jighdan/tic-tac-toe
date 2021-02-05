@@ -1,0 +1,12 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jighdan/tic-tac-toe.git",
+  "author": "Reinny <reynsth@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.20.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
