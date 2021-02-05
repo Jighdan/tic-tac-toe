@@ -1,5 +1,8 @@
 # Tic-Tac-Toe
-A simple tic-tac-toe game. Made for practice purposes.
+A simple tic-tac-toe game. Made for practicing concepts such as:
+
+- Object-Oriented Programming.
+- UML Modeling
 
 [Check the game rules.](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
