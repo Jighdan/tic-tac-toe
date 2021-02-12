@@ -1,41 +1,38 @@
-*, *::before, *::after {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  min-height: 100vh;
-  max-height: 100vh;
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
-html {
-  background-color: #DAD7CD;
-  color: #3A5A40;
+html,
+body {
+  min-height: 100vh;
 }
 
 body {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 5vh 1rem;
+  padding: 2.5vh 1rem;
   display: grid;
+  gap: 2rem;
   place-items: center stretch;
-  grid-template-rows: auto 1fr 10% auto;
-}
-
-.player-first {
-  color: #588157;
-}
-
-.player-second {
-  color: #A3B18A;
+  grid-template-rows: auto 1fr auto auto;
 }
 
 .scoreboard {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: calc(2vw + 2rem);
+  justify-content: center;
+  gap: calc(2vw + 1.5rem);
 }
 
 .score-item {
@@ -45,32 +42,30 @@ body {
   gap: 0.5rem;
   font-weight: bold;
 }
-.score-item svg {
-  width: 50px;
+.score-item img {
+  width: calc(20px + 1vw);
   height: auto;
 }
-
-.board-container {
-  height: 100%;
-  width: 100%;
-  max-width: 500px;
-  max-height: 500px;
-  display: grid;
+.score-item p {
+  font-size: large;
+  font-weight: bold;
 }
 
 .board {
-  min-width: 100%;
-  min-height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  aspect-ratio: 1/1;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .board-square {
   display: grid;
   place-items: center;
-  border: 1px solid #344E41;
+  border: 1.75px solid #212529;
   border-collapse: collapse;
+  font-size: 3.5rem;
 }
 .board-square-0, .board-square-1, .board-square-2 {
   border-top: none;
@@ -85,12 +80,18 @@ body {
   border-left: none;
 }
 
-.turns {
+.current-turn {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.turns .turn-text {
+.current-turn .current-turn-text {
+  font-size: 1.2rem;
   font-style: italic;
+}
+.current-turn .current-turn-text .current-turn-icon {
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 .options {
@@ -100,7 +101,7 @@ body {
   gap: 5%;
 }
 .options .option-item {
-  font-size: 1.65rem;
+  font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
 }

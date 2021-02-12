@@ -1,32 +1,35 @@
 @import "./variables";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html, body {
-	min-height: 100vh;
-	max-height: 100vh;
+html {
+	font-family: $font-family;
+	color: $color-font;
+	background-color: $color-background;
 }
 
-html {
-	background-color: $color-background;
-	color: $color-font;
+html,
+body {
+	min-height: 100vh;
 }
 
 body {
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto;
-	padding: 5vh 1rem;
+	padding: 2.5vh 1rem;
 	display: grid;
+	gap: 2rem;
 	place-items: center stretch;
-	grid-template-rows: auto 1fr 10% auto;
+	grid-template-rows: auto 1fr auto auto;
 }
 
-@import "./components/players";
 @import "./components/scoreboard";
 @import "./components/board";
-@import "./components/turns";
+@import "./components/current-turn";
 @import "./components/options";

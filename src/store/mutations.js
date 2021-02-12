@@ -10,18 +10,18 @@ export default {
 	updateScore(state, { scorer }) {
 		if (state.score.hasOwnProperty(scorer)) {
 			state.score[scorer]++;
-		};
+		}
 	},
 
 	clearBoard(state) {
-		state.board.map(square => square.content = null);
+		state.board.map((square) => (square.content = null));
 	},
 
 	clearScore(state) {
 		state.score = {
 			playerFirst: 0,
 			playerSecond: 0,
-			draws: 0
+			draws: 0,
 		};
 	},
 };
