@@ -1,0 +1,19 @@
+.scoreboard {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: calc(2vw + 2rem);
+}
+
+.score-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: bold;
+
+	& svg {
+		width: 50px;
+		height: auto;
+	}
+}

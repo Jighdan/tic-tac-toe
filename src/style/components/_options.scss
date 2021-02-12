@@ -1,0 +1,16 @@
+.options {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 5%;
+
+	.option-item {
+		font-size: 1.65rem;
+		font-weight: bold;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -5,7 +5,14 @@
   "repository": "https://github.com/Jighdan/tic-tac-toe.git",
   "author": "Reinny <reynsth@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack",
+    "dev:scss": "dart-sass ./src/style/index.scss ./public/style.css --watch --no-source-map",
+    "build:scss": "dart-sass ./src/style/index.scss ./public/style.css --no-source-map"
+  },
   "dependencies": {
+    "dart-sass": "^1.25.0",
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0"
   }

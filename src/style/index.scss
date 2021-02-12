@@ -1,0 +1,32 @@
+@import "./variables";
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+html {
+	background-color: $color-background;
+	color: $color-font;
+}
+
+body {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 5vh 1rem;
+	display: grid;
+	place-items: center stretch;
+	grid-template-rows: auto 1fr 10% auto;
+}
+
+@import "./components/players";
+@import "./components/scoreboard";
+@import "./components/board";
+@import "./components/turns";
+@import "./components/options";

@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+html {
+  background-color: #DAD7CD;
+  color: #3A5A40;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5vh 1rem;
+  display: grid;
+  place-items: center stretch;
+  grid-template-rows: auto 1fr 10% auto;
+}
+
+.player-first {
+  color: #588157;
+}
+
+.player-second {
+  color: #A3B18A;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: calc(2vw + 2rem);
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+.score-item svg {
+  width: 50px;
+  height: auto;
+}
+
+.board-container {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  display: grid;
+}
+
+.board {
+  min-width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.board-square {
+  display: grid;
+  place-items: center;
+  border: 1px solid #344E41;
+  border-collapse: collapse;
+}
+.board-square-0, .board-square-1, .board-square-2 {
+  border-top: none;
+}
+.board-square-2, .board-square-5, .board-square-8 {
+  border-right: none;
+}
+.board-square-6, .board-square-7, .board-square-8 {
+  border-bottom: none;
+}
+.board-square-0, .board-square-3, .board-square-6 {
+  border-left: none;
+}
+
+.turns {
+  display: flex;
+  justify-content: center;
+}
+.turns .turn-text {
+  font-style: italic;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+}
+.options .option-item {
+  font-size: 1.65rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.options .option-item:hover {
+  text-decoration: underline;
+}
