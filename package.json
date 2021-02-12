@@ -15,5 +15,8 @@
     "dart-sass": "^1.25.0",
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
