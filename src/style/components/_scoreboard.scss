@@ -12,9 +12,8 @@
 	gap: 0.5rem;
 	font-weight: bold;
 
-	& img {
-		width: calc(20px + 1vw);
-		height: auto;
+	.score-item-icon {
+		font-size: 2rem;
 	}
 
 	& p {
