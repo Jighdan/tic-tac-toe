@@ -21,7 +21,6 @@ const state = {
 		// https://www.w3schools.com/charsets/ref_utf_dingbats.asp
 		playerFirst: "&#10007;",
 		playerSecond: "&#10061;",
-		draw: "&#10070;",
 	},
 };
 
