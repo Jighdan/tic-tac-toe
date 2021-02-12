@@ -1,24 +1,18 @@
-.board-container {
-	height: 100%;
-	width: 100%;
-	max-width: 500px;
-	max-height: 500px;
-	display: grid;
-}
-
 .board {
-	min-width: 100%;
-	min-height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	aspect-ratio: 1 / 1;
 	display: grid;
-	grid-template-columns: repeat(3, auto);
-	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 }
 
 .board-square {
 	display: grid;
 	place-items: center;
-	border: 1px solid $color-lines;
+	border: 1.75px solid $color-lines;
 	border-collapse: collapse;
+	font-size: 3.5rem;
 
 	// Removing outer borders
 	&-0, &-1, &-2 {

@@ -1,0 +1,15 @@
+.current-turn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.current-turn-text {
+		font-size: 1.2rem;
+		font-style: italic;
+
+		.current-turn-icon {
+			font-size: 1.75rem;
+			font-weight: bold;
+		}
+	}
+}
