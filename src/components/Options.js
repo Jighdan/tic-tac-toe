@@ -6,14 +6,18 @@ export default class Options extends ComponentBase {
 		super({ store, static: true });
 		this.buttonClearBoard = document.getElementById("buttonClearBoard");
 		this.buttonClearScore = document.getElementById("buttonClearScore");
-	};
+	}
 
 	addEvents() {
-		this.buttonClearBoard.addEventListener("click", () => store.commit("clearBoard"));
-		this.buttonClearScore.addEventListener("click", () => store.commit("clearScore"));
-	};
+		this.buttonClearBoard.addEventListener("click", () =>
+			store.commit("clearBoard")
+		);
+		this.buttonClearScore.addEventListener("click", () =>
+			store.commit("clearScore")
+		);
+	}
 
 	render() {
 		this.addEvents();
-	};
-};
+	}
+}

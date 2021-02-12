@@ -15,19 +15,27 @@
 	font-size: 3.5rem;
 
 	// Removing outer borders
-	&-0, &-1, &-2 {
+	&-0,
+	&-1,
+	&-2 {
 		border-top: none;
 	}
 
-	&-2, &-5, &-8 {
+	&-2,
+	&-5,
+	&-8 {
 		border-right: none;
 	}
 
-	&-6, &-7, &-8 {
+	&-6,
+	&-7,
+	&-8 {
 		border-bottom: none;
 	}
 
-	&-0, &-3, &-6 {
+	&-0,
+	&-3,
+	&-6 {
 		border-left: none;
 	}
 }
