@@ -4,13 +4,13 @@ export default {
 			const playerData = context.getter("currentTurnPlayerData");
 			context.commit("updateSquareContent", { index: squareIndex, newContent: playerData.icon });
 
-			if (context.getter("hasWinningConditionMet")) {
-				context.commit("updateScore", { scorer: playerData.name });
+			if (context.getter("isBoardFull")) {
+				context.commit("updateScore", { scorer: "draws" });
 				context.commit("clearBoard");
 			};
 
-			if (context.getter("isBoardFull")) {
-				context.commit("updateScore", { scorer: "draw" });
+			if (context.getter("hasWinningConditionMet")) {
+				context.commit("updateScore", { scorer: playerData.name });
 				context.commit("clearBoard");
 			};
 
