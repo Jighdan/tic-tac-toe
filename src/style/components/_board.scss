@@ -1,9 +1,10 @@
 .board {
-	margin-top: auto;
-	margin-bottom: auto;
 	// Adding a height to compensate Safari's lack of support
 	// for aspect-ratio
-	min-height: 50vh;
+	max-height: 50vh;
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
 	aspect-ratio: 1 / 1;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -40,5 +41,12 @@
 	&-3,
 	&-6 {
 		border-left: none;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.board {
+		min-height: 40vh;
+		max-height: 100%;
 	}
 }

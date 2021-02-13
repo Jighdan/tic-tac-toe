@@ -11,39 +11,44 @@
 </head>
 
 <body>
-	<aside class="scoreboard">
-		<figure class="score-item"
-						id="playerFirst">
-			<span class="score-item-icon"
-						role="img"
-						alt="Icon X">&#10007;</span>
-			<p id="playerFirstScore">0 Wins</p>
-		</figure>
+	<aside>
+		<div class="scoreboard">
+			<figure class="score-item"
+							id="playerFirst">
+				<span class="score-item-icon"
+							role="img"
+							alt="Icon X">&#10007;</span>
+				<p id="playerFirstScore">0 Wins</p>
+			</figure>
 
-		<figure class="score-item"
-						id="playerSecond">
-			<span class="score-item-icon"
-						role="img"
-						alt="Icon Circle">&#10061;</span>
-			<p id="playerSecondScore">0 Wins</p>
-		</figure>
+			<figure class="score-item"
+							id="playerSecond">
+				<span class="score-item-icon"
+							role="img"
+							alt="Icon Circle">&#10061;</span>
+				<p id="playerSecondScore">0 Wins</p>
+			</figure>
 
-		<figure class="score-item"
-						id="draws">
-			<span class="score-item-icon"
-						role="img"
-						alt="Hyphen Icon">~</span>
-			<p id="drawsScore">0 Draws</p>
-		</figure>
+			<figure class="score-item"
+							id="draws">
+				<span class="score-item-icon"
+							role="img"
+							alt="Hyphen Icon">~</span>
+				<p id="drawsScore">0 Draws</p>
+			</figure>
+		</div>
+
+		<div class="current-turn">
+			<p class="current-turn-text">Current Turn: </p><span class="current-turn-icon"
+						id="currentTurn"></span>
+		</div>
 	</aside>
 
 	<main class="board"
-				id="board"></main>
+				id="board">
+	</main>
 
-	<div class="current-turn">
-		<p class="current-turn-text">Current Turn: <span class="current-turn-icon"
-						id="currentTurn"></span></p>
-	</div>
+
 
 	<aside class="options">
 		<span role="button"
