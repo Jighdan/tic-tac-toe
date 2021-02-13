@@ -30,23 +30,6 @@ A simple tic-tac-toe game. Made for practicing concepts such as:
 	$ yarn dev
 ```
 
-## Game Logic Pseudo-code
-
-```
-IF clickedSquare IS NONE:
-	SET clickedSquare.content AS currentTurn
-
-	IF winningConditions IS TRUE:
-		ADD score TO currentTurn
-		END
-
-	IF grid DOESN'T CONTAIN NONE:
-		ADD score TO draw
-		END
-
-	TOGGLE currentTurn
-```
-
 ## Tools
 
 - **Sass**: Style files modularity.
