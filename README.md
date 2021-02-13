@@ -8,6 +8,28 @@ A simple tic-tac-toe game. Made for practicing concepts such as:
 
 [Check the game rules.](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
+## Start the Project
+
+### In Production Mode
+
+```
+	# Install the required dependencies
+	$ yarn install
+
+	# Build the project
+	$ yarn build
+```
+
+### In Development Mode
+
+```
+	# Install the required dependencies
+	$ yarn install
+
+	# Start the project
+	$ yarn dev
+```
+
 ## Game Logic Pseudo-code
 
 ```
