@@ -1,6 +1,9 @@
 .board {
 	margin-top: auto;
 	margin-bottom: auto;
+	// Adding a height to compensate Safari's lack of support
+	// for aspect-ratio
+	min-height: 50vh;
 	aspect-ratio: 1 / 1;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
