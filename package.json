@@ -17,6 +17,7 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "prettier": "2.2.1"
   }
 }
