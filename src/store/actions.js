@@ -9,15 +9,19 @@ export default {
 
 			if (context.getter("hasWinningConditionMet")) {
 				context.commit("updateScore", { scorer: playerData.name });
-				context.commit("clearBoard");
+				setTimeout(context.dispatch("resetBoard"), 1000, null);
 			}
 
 			if (context.getter("isBoardFull")) {
 				context.commit("updateScore", { scorer: "draws" });
-				context.commit("clearBoard");
+				setTimeout(context.dispatch("resetBoard"), 1000, null);
 			}
 
 			context.commit("toggleTurn");
 		}
+	},
+
+	resetBoard(context) {
+		setTimeout(() => context.commit("clearBoard"), 1000, null);
 	},
 };
